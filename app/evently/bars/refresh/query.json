@@ -1,0 +1,5 @@
+{
+  "view" : "bar_counts",
+  "group_level" : 3,
+  "reduce":true
+}

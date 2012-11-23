@@ -1,0 +1,21 @@
+{
+  "name": "sandy_monitor",
+  "author": {
+    "name": "Miles Thompson",
+    "email": "utunga@gmail.com"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "version": "0.1.0-6",
+  "dependencies": {
+    "ntwitter": "0.2.x",
+    "nano": "3.3.x"
+  },
+  "engines": {
+    "node": "v0.8.x"
+  },
+  "subdomain": "utunga.sandy_monitor",
+  "analyze": true,
+  "readme": "super simple node app to monitor twitter statuses/filter stream for nyc region or #sandy tag then post it to couchdb"
+}

@@ -1,0 +1,19 @@
+[
+
+  {
+    "to": "index.html",
+    "from": ""
+  },
+  {
+    "to": "style/*",
+    "from": "style/*"
+  },
+  {
+    "to":"vendor/*",
+    "from":"vendor/*"
+  },
+  {
+    "to":"_list/*",
+    "from":"_list/*"
+  }
+]
