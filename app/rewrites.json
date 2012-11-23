@@ -1,19 +1,50 @@
 [
-
-  {
-    "to": "index.html",
-    "from": ""
-  },
-  {
-    "to": "style/*",
-    "from": "style/*"
-  },
-  {
-    "to":"vendor/*",
-    "from":"vendor/*"
-  },
-  {
-    "to":"_list/*",
-    "from":"_list/*"
-  }
+{
+  "from": "geo_sandy/",
+  "to": "../.."
+},
+{
+  "from": "geo_sandy/_changes/*",
+  "to": "../../_changes/*"
+},
+{
+  "from": "geo_sandy/_design/app",
+  "to": ""
+},
+{
+  "from": "",
+  "to": "index.html"
+},
+{
+  "from": "img/*",
+  "to": "img/*"
+},
+{
+  "from": "js/*",
+  "to": "js/*"
+},
+{
+  "from": "js/libs/*",
+  "to": "js/libs/*"
+},
+{
+  "from": "css/*",
+  "to": "css/*"
+},
+{
+  "from": "evently/*",
+  "to": "evently/*"
+},
+{
+  "from": "vendor/*",
+  "to": "vendor/*"
+},
+{
+  "from": "_view/*",
+  "to": "_view/*"
+},
+{
+  "from": "geo_sandy/_design/app/_view/*",
+  "to": "_view/*"
+}
 ]

@@ -1,6 +1,7 @@
-db = $.couch.db("pub");
+db = $.couch.db("geo_sandy");
 design = "app";
 
+var num_items=140;
 function drawItems() {
 	
 	//var state = getStateFromPath();
@@ -23,29 +24,23 @@ function drawItems() {
 	
 	view_params =  
 	{
-			descending : "true",
+			descending : "false",
             reduce: false,
-            limit : 50,
+            limit : num_items,
             update_seq : true,
             success : success_callback
 	};
 	
+    // (apologies for use of yoda bool to make media the default..)
+    // fixme: ideally fix the entire state <-> url mgt of this thing
 	if (media_mode)
 	{
-		db.view(design + "/media_tweets",view_params);
+		db.view(design + "/tweets",view_params);
 	}
 	else
 	{
-		//view_params.startkey =[state.loc,{}] ;
-		db.view(design + "/tweets",view_params);
+        db.view(design + "/media_tweets",view_params);
 	}
-//	else if (state.bar!==undefined)
-//	{
-//		view_params.startkey =[state.bar,{}] ;
-//		db.view(design + "/tweets_by_bar",view_params);
-//	}
-	
-	
 };
 
 var changesRunning = false;
